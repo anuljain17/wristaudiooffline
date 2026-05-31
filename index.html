@@ -54,6 +54,31 @@
       font-size: 0.8rem;
       margin-bottom: 10px;
     }
+    .hero-video {
+      width: 100%;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #000;
+      display: block;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+    }
+    .feature-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      margin-top: 12px;
+    }
+    .feature {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+    .feature strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
   </style>
 </head>
 <body>
@@ -66,6 +91,29 @@
     </section>
 
     <section class="card">
+      <h2>See It In Action</h2>
+      <p>Import audio on iPhone, transfer it to Apple Watch, then listen offline with a minimal on-watch library.</p>
+      <video class="hero-video" controls preload="metadata" poster="assets/wristaudiooffline-github-demo-poster.png">
+        <source src="assets/wristaudiooffline-github-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video. Download the demo video from the assets folder.
+      </video>
+      <div class="feature-grid">
+        <div class="feature">
+          <strong>Simple transfer</strong>
+          <span class="muted">Choose audio files on iPhone and monitor clear progress.</span>
+        </div>
+        <div class="feature">
+          <strong>Offline watch playback</strong>
+          <span class="muted">Play local files from your Apple Watch library.</span>
+        </div>
+        <div class="feature">
+          <strong>Minimal experience</strong>
+          <span class="muted">No ads, no account wall, and no clutter.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>Contact Support</h2>
       <p>Email: <a href="mailto:support@wristaudiooffline.app">support@wristaudiooffline.app</a></p>
       <p>Please include your iPhone model, watch model, iOS/watchOS version, and a screenshot of the error for faster support.</p>
@@ -75,7 +123,8 @@
       <h2>Quick Troubleshooting</h2>
       <ul>
         <li>Ensure iPhone and Apple Watch are paired and both apps are installed.</li>
-        <li>Keep both apps open for first transfer setup.</li>
+        <li>Keep the watch app open in the foreground for the fastest transfers.</li>
+        <li>Transfers can continue through the reliable background path if the phone locks, but foreground is faster.</li>
         <li>Use supported formats: MP3, AAC/M4A, or WAV.</li>
         <li>If playback route fails on watch, check Bluetooth route or enable speaker fallback in watch settings.</li>
         <li>If transfer stalls, restart both apps and retry transfer.</li>
@@ -86,7 +135,7 @@
       <h2>App Info</h2>
       <p>App: WristAudioOffline</p>
       <p>Platform: iPhone + Apple Watch</p>
-      <p class="muted">Last updated: April 24, 2026</p>
+      <p class="muted">Last updated: May 30, 2026</p>
     </section>
   </main>
 </body>
