@@ -1,21 +1,16 @@
-# WristAudioOffline Support Page
+# WristAudioOffline Support Site
 
-Support page source:
+This repository publishes the WristAudioOffline support and marketing page on GitHub Pages. Release page content and media are synchronized from `anuljain17/musicoffline/marketing/support/`.
 
-- `marketing/support/index.html`
+## App Store Support and Marketing URL
 
-## Recommended App Store Support URL
+- `https://anuljain17.github.io/wristaudiooffline/`
 
-If hosted on GitHub Pages:
+## Release Publishing
 
-- `https://anuljain.github.io/wristaudiooffline-support/`
-
-## Quick Publish (GitHub Pages)
-
-1. Create a public GitHub repo named `wristaudiooffline-support`.
-2. Upload `index.html` and the `assets/` folder from this folder to the repo root.
-3. In GitHub repo settings, enable Pages from `main` branch and root (`/`).
-4. Use the published URL in App Store Connect as the Support URL.
+1. Update `index.html` and the two files under `assets/` from the app repository's `marketing/support/` folder.
+2. Commit and push `main`.
+3. Verify the public URL, including the embedded demo video, before entering it in App Store Connect.
 
 ## Embedded Demo Video
 
